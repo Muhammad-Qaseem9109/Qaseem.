@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/218d32f29f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/Q__3_-removebg-preview.png" class="logo">
+        <ul id="sidemenue">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-xmark" onclick="closemenue()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenue()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Graphic Designer</p>
+        <h1>Hi,I'm Muhammad<br><span>Qaseem</span> from Pakistan</h1>
+      </div>
+    </div>
+  </div>
+  <!---About section-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Graphic Designing,MS Office, and Social Media Marketting are my top skils.I'm a student of 1st year of ICs.I have an internship from zaff Institue.</p>
+
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skils</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Graphic Designing</span><br>Logo designing,Flex and Banner Designing,and Business Card Designing.</li>
+              <li><span>MS Office</span><br>MS Word,MS Exel,and MS PowerPoint.</li>
+              <li><span>Social Media Marketting</span><br>Adds..etc</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>2025</span><br>1st year ICs.</li>
+              <li><span>2025</span><br>1st year ICs.</li>
+              <li><span>2025</span><br>1st year ICs</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>2025</span><br>Get Internship at Zaff Institue.</li>
+              <li><span>2025</span><br>Get Internship at Zaff Institue.</li>
+              <li><span>2025</span><br>Get Internship at Zaff Institue.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--services-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-pen-fancy"></i>
+          <h2>Graphic Designing</h2>
+          <p>Logo Designing,Flex and Banner Designing,Business card Designing</p>
+          <a href="#">learn more</a>
+        </div>
+         <div>
+          <i class="fa-solid fa-building"></i>
+          <h2>MS Office</h2>
+          <p>MS Word,MS Exel and MS PowerPoint</p>
+          <a href="#">learn more</a>
+        </div>
+         <div>
+           <i class="fa-solid fa-user"></i>
+          <h2>Social Media Marketting</h2>
+          <p>Run Ads</p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------portfolio--->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Graphic Designing</h3>
+            <p>This is a flex of a real estate advisor office</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>MS Office</h3>
+            <p>This is a table created in MS Exel which can take database of student name,class,adress</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Social Media Marketting</h3>
+            <p>Run add  of a business on social media</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  <!---contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>PixelLogic.mq@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>03197208964</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/M.Qaseem9109"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/m.qaseem9109/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="text" name="Email" placeholder="your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg">hello</span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>copyright © Qaseem. made by <i class="fa-solid fa-heart"></i> Muhammad Qaseem</p>
+  </div>
+</div>
+  <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link")
+        }
+         for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+  </script>
+  <script>
+    var sidemenue = document.getElementById("sidemenue");
+    function openmenue(){
+      sidemenue.style.right ="0";
+    }
+    function closemenue(){
+      sidemenue.style.right ="-200px";
+    }
+  </script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxc_L3k996ZQ4Suu7_LpXRu-JUQ-EvCDrRhZ_LuIacO8MF4CBbvGUTSUfwyoiNWSDvm/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent succesfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
